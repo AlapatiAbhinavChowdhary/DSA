@@ -47,3 +47,5 @@ public class queueusing2stack {
         }
     }
 }
+
+
