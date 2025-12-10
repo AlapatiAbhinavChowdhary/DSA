@@ -47,6 +47,35 @@ public class BST {
             return search(root.right,key);
         }    
     }
+    public static Node delete(Node root,int val){
+        if(root.data>val){
+            root.left=delete(root.left,val);
+        }else if(root.data<val){
+           root.right=delete(root.right,val); 
+        }
+        else{
+            if(root.left==null && root.right==null){
+                return null;
+            }
+            if(root.left==null){
+                return root.right;
+            }else if(root.right==null){
+                return root.left;
+            }
+
+            Node IS=inorderSuccessor(root.right);
+            root.data=IS.data;
+            root.right=delete(root.right,IS.data);
+        }
+        return root;
+    }
+    public static Node inorderSuccessor(Node root){
+        while(root.left!=null){
+            root=root.left;
+        }
+        return root;
+
+    }
   public static void main(String[] args){
     int val[]={5,3,8,1,4,7,9};
     Node root=null;
@@ -62,5 +91,8 @@ public class BST {
     else{
         System.out.println("Not Found");
     }
+
+    root=delete(root,3);
+    inorder(root);
   }  
 }
