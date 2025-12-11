@@ -1,3 +1,4 @@
+import java.util.*;
 public class BST {
     static class Node{
         int data;
@@ -90,6 +91,27 @@ public class BST {
             printinrange(root.right,x,y);
         }
     }
+    public static void printpath(ArrayList<Integer> path){
+        for(int i=0;i<path.size();i++){
+            System.out.print(path.get(i)+"->");
+        }
+        System.out.println("null");
+    }
+
+    public static void printroot2leaf(Node root, ArrayList<Integer> path){
+        if(root==null){
+            return;
+        }
+        path.add(root.data);
+        if(root.left==null && root.right==null){
+            printpath(path);
+        }else{
+            printroot2leaf(root.left,path);
+            printroot2leaf(root.right,path);
+        }
+        
+        path.remove(path.size()-1);
+    }
   public static void main(String[] args){
     int val[]={5,3,8,1,4,7,9};
     Node root=null;
@@ -110,6 +132,8 @@ public class BST {
     inorder(root);
     System.out.println();
     printinrange(root,4,8);
-    
+    System.out.println();
+    printroot2leaf(root,new ArrayList<>());
+
   }  
 }
