@@ -12,32 +12,33 @@ public class trie {
     }
     static Node root=new Node();
     public static void insert(String word){
+        Node curr=root;
         for(int i=0;i<word.length();i++){
             int idx=word.charAt(i)-'a';
-            if(root.children[idx]==null){
-                root.children[idx]=new Node();
+            if(curr.children[idx]==null){
+                curr.children[idx]=new Node();
             }
             if(i==word.length()-1){
-                root.children[idx].isend=true;
+                curr.children[idx].isend=true;
             }
-            root=root.children[idx];
+            curr=curr.children[idx];
         }
     }
 
 
     public static boolean search(String key){
-        
+        Node curr=root;
         for(int i=0;i<key.length();i++){
             int idx=key.charAt(i)-'a';
-            if(root.children[idx]==null){
+            if(curr.children[idx]==null){
                 System.out.println("word not found");
                 return false;
             }
-            if(i==key.length()-1 && root.children[idx].isend==false){
+            if(i==key.length()-1 && curr.children[idx].isend==false){
                 System.out.println("word not found");
                 return false;
             }
-            root=root.children[idx];
+            curr=curr.children[idx];
         }
         return true;
     }
