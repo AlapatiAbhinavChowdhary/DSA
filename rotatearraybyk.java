@@ -7,9 +7,7 @@ public class rotatearraybyk {
             s++;
             e--;
         }
-        for(int i=s;i<e;i++){
-            System.out.print(arr[i]);
-        }
+       
     }
     static void reverse(int arr[],int k){
         int n=arr.length;
@@ -24,5 +22,8 @@ public class rotatearraybyk {
         
         int k=2;
         reverse(arr,k);
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]);
+        }
     }
 }
