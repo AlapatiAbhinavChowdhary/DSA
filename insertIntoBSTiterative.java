@@ -29,6 +29,7 @@ class Solution {
             }else{
                 if(curr.right==null){
                     curr.right=new TreeNode(val);
+                    break;
                 }
                 curr=curr.right;
             }
