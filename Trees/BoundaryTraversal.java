@@ -1,4 +1,4 @@
-class Solution {
+﻿class BoundaryTraversal {
     public ArrayList<Integer> boundaryTraversal(int mat[][]) {
         // code here
         ArrayList<Integer> a=new ArrayList<>();

@@ -1,5 +1,5 @@
-// Node class
-/* class Node {
+﻿// Node class
+/* class StackUsingLinkedList {
     int data;
     Node next;
 

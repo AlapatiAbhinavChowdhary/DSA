@@ -1,4 +1,4 @@
-public class secondlargele {
+﻿public class SecondLargestElement {
     static void second(int[] arr,int n){
         int max=Integer.MIN_VALUE;
         int max2=Integer.MIN_VALUE;

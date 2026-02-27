@@ -1,4 +1,4 @@
-class Solution {
+﻿class AsteroidCollision {
     public int[] asteroidCollision(int[] as) {
         Stack<Integer> st=new Stack<>();
         for(int a:as){

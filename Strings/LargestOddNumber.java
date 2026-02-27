@@ -1,4 +1,4 @@
-class Solution {
+﻿class LargestOddNumber {
     public String largestOddNumber(String num) {
         int n=num.length();
         for(int i=n-1;i>=0;i--){

@@ -1,4 +1,4 @@
-public class recursionpartyinv {
+﻿public class PartyInvitation {
     public static int callguest(int n){
         if(n==0||n==1||n==2){
             return n;

@@ -1,4 +1,4 @@
-class Node{
+﻿class InsertionSortLinkedList{
     int data;
     Node next;
     Node(int data){

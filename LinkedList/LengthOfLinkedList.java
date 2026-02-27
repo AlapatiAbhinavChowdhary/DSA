@@ -1,4 +1,4 @@
-class Solution {
+﻿class LengthOfLinkedList {
     public int getCount(Node head) {
         // code here
         int n=1;

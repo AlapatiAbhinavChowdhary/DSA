@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Definition for singly-linked list.
- * public class ListNode {
+ * public class MergeTwoSortedLists {
  *     int val;
  *     ListNode next;
  *     ListNode() {}

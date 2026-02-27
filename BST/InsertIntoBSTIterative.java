@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Definition for a binary tree node.
- * public class TreeNode {
+ * public class InsertIntoBSTIterative {
  *     int val;
  *     TreeNode left;
  *     TreeNode right;

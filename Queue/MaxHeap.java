@@ -1,5 +1,5 @@
-import java.util.*;
-class Main {
+﻿import java.util.*;
+class MaxHeap {
     public static void main(String[] args) {
         PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
         pq.add(5);

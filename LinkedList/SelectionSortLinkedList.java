@@ -1,4 +1,4 @@
-class Node{
+﻿class SelectionSortLinkedList{
     int data;
     Node next;
     Node(int data){

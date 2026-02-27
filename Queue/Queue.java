@@ -1,4 +1,4 @@
-class Queuearay{
+﻿class Queue{
     int [] arr;
     int front;
     int rear;

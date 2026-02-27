@@ -1,4 +1,4 @@
-class Solution {
+﻿class SumOfUniqueElements {
     public int sumOfUnique(int[] nums) {
         int[] freq = new int[101];
         

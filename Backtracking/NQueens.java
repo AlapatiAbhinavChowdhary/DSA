@@ -1,7 +1,7 @@
-import java.util.ArrayList;
+﻿import java.util.ArrayList;
 import java.util.List;
 
-public class nqueen {
+public class NQueens {
 
     // check in all 8 directions
     public boolean isSafe(int row, int col, char[][] board) {

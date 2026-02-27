@@ -1,4 +1,4 @@
-public class swap {
+﻿public class SwapElements {
     public static void swapping(int a,int b){
         int temp=a;
         b=a;

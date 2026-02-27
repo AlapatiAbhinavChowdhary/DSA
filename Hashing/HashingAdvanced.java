@@ -1,5 +1,5 @@
-import java.util.*;
-public class Hashing1 {
+﻿import java.util.*;
+public class HashingAdvanced {
     public static void main(String[] args){
         HashMap<String,Integer> map=new HashMap<>();
         map.put("india",120);

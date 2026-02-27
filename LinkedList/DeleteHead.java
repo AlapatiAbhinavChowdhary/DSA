@@ -1,4 +1,4 @@
-class Solution {
+﻿class DeleteHead {
     public Node deleteHead(Node head) {
         // code here
         if(head==null){

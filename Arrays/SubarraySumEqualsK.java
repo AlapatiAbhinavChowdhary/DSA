@@ -1,4 +1,4 @@
-// class Solution {
+﻿// class SubarraySumEqualsK {
 //     public int subarraySum(int[] nums, int k) {
 //         int count = 0;
 

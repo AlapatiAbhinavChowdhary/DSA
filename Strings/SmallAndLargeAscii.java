@@ -1,4 +1,4 @@
-public class smallandlargeascii_instr {
+﻿public class SmallAndLargeAscii {
     public static void main(String[] args){
         String str="LovelyProfessionaluniversity";
         int small=122,large=65;

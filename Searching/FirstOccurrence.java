@@ -1,6 +1,6 @@
+﻿
 
-
-public class firstoccndl{
+public class FirstOccurrence{
     public static void main(String[] args){
         int [] arr={1,2,3,4,2,1,2,3,4,4,2,1,1,3,4,4,6,7,8,9,12,2,2,1};
         int f=-1;

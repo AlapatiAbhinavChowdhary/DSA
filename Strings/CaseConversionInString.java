@@ -1,4 +1,4 @@
-public class Lowtohigh_hightolow_instringofchar {
+﻿public class CaseConversionInString {
     public static void main(String[] args){
         String str="WcEssA";
         StringBuilder result=new StringBuilder();

@@ -1,4 +1,4 @@
-public class rightrottation {
+﻿public class RightRotation {
     static void right(int[] arr,int s,int e){
         while(s<e){
             int temp=arr[s];

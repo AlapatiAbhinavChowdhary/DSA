@@ -1,4 +1,4 @@
-class Node{
+﻿class SumOfLinkedList{
     int data;
     Node next;
     Node(int data){

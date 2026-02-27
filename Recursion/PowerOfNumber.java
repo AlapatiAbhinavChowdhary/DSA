@@ -1,4 +1,4 @@
-public class recursion1 {
+﻿public class PowerOfNumber {
     public static int calcpow(int x,int n){
         if(n==0){
             return 1;

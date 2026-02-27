@@ -1,4 +1,4 @@
-public class leetcode961 {
+﻿public class RepeatedNTimesElement {
     public int rep(int[] arr){
         int n=arr.length/2;
         HashMap<Integer,Integer> map=new HashMap<>();

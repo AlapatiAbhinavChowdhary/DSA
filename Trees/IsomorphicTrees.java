@@ -1,6 +1,6 @@
-import java.util.HashMap;
+﻿import java.util.HashMap;
 
-public class isomorphic {
+public class IsomorphicTrees {
 
     static boolean isIsomorphic(String s, String t) {
         if (s.length() != t.length()) return false;

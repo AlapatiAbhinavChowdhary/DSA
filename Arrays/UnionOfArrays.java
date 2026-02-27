@@ -1,4 +1,4 @@
-// public class unionof2arrays {
+﻿// public class UnionOfArrays {
 //     public static int union(int[] arr1,int arr2[]){
 //         HashSet<Integer> set=new HashSet<>();
 //          for(int i=0;i<arr1.length;i++){

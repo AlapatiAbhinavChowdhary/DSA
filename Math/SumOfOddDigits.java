@@ -1,4 +1,4 @@
-public class sumof_odd_digits {
+﻿public class SumOfOddDigits {
     public static void main(String[] args){
         int n=2357649;
         int sum=0;

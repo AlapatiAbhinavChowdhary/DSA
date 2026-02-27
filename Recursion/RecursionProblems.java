@@ -1,5 +1,5 @@
-//power of hanoi
-// public class recursion2 {
+﻿//power of hanoi
+// public class RecursionProblems {
 
 //     public static void towerofhanoi(int n,String src,String helper,String dest){
 //         if(n==1){
@@ -19,7 +19,7 @@
 
 
 //print string in reverse
-// public class recursion2{
+// public class RecursionProblems{
 //     public static void printrev(String str,int idx){
 //         if(idx==0){
 //             System.out.println(str.charAt(idx));
@@ -38,7 +38,7 @@
 
 
 //find the 1st & last occurance of an element in string
-// public class recursion2{
+// public class RecursionProblems{
 //     public static int first=-1;
 //     public static int last=-1;
 //     public static void findocc(String str,int idx,char target){
@@ -68,7 +68,7 @@
 
 
 //check if array is sorted strictly increasing
-// public class recursion2{
+// public class RecursionProblems{
 //     public static boolean issorted(int arr[], int idx){
 //        if(idx==arr.length-1){
 //             return true;
@@ -88,7 +88,7 @@
 
 
 //move all x to the end of string
-// public class recursion2{
+// public class RecursionProblems{
 //     public static void moveallx(String str,int idx,int count,String newString){
 //         if(idx==str.length()){
 //             for(int i=0;i<count;i++){
@@ -114,7 +114,7 @@
 
 
 //remove dupliates in string
-// public class recursion2{
+// public class RecursionProblems{
 //     public static boolean[] map=new boolean[26];
 //     public static void removedup(String str,int idx,String newstring){
 //         if(idx==str.length()){
@@ -142,7 +142,7 @@
 
 
 //print all the subsequence of a string
-// public class recursion2{
+// public class RecursionProblems{
 //     public static void subseq(String str,int idx,String newstring){
 //         if(idx==str.length()){
 //             System.out.println(newstring);
@@ -167,7 +167,7 @@
 
 //print keypad combination
 
-public class recursion2{
+public class RecursionProblems{
     public static String[] keypad={".;","abc","def","ghi","jkl","mno","pqrs","tu","vwx","yz"};
     public static void printcombo(String str,int idx,String comb){
         if(idx==str.length()){

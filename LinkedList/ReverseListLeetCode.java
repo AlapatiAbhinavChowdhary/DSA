@@ -1,4 +1,4 @@
-class Solution {
+﻿class ReverseListLeetCode {
     public ListNode reverseList(ListNode head) {
         ListNode curr=head;
         ListNode prev=null;

@@ -1,4 +1,4 @@
-public class converteveryfirstchartouppercase {
+﻿public class CapitalizeFirstChar {
     public static void main(String[] args){
         String str="hello world. the world is beautiful.";
         for(int i=0;i<str.length();i++){

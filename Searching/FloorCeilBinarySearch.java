@@ -1,4 +1,4 @@
-public class floorceil {
+﻿public class FloorCeilBinarySearch {
     public static int findfloor(int[] arr,int x){
         int l=0,r=arr.length-1;
         int ans=-1;

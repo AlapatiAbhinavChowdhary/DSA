@@ -1,4 +1,4 @@
-class Node{
+﻿class EvenNodesInLinkedList{
     int data;
     Node next;
     Node(int data){

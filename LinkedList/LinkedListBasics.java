@@ -1,4 +1,4 @@
-class ListNode{
+﻿class LinkedListBasics{
     int val;
     ListNode next;
     ListNode(int val){

@@ -1,4 +1,4 @@
-class Solution {
+﻿class RotateImage {
     public int[][] rotateimage(int[][] matrix) {
         int r=matrix.length;
         int c=matrix[0].length;

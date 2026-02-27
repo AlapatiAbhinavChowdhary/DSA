@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Definition for a binary tree node.
- * public class TreeNode {
+ * public class InvertTree {
  *     int val;
  *     TreeNode left;
  *     TreeNode right;

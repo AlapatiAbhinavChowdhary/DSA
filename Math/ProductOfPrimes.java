@@ -1,4 +1,4 @@
-public class productofprimesin_n {
+﻿public class ProductOfPrimes {
     public static void main(String[] args){
         int n=2754;
         int p=1;

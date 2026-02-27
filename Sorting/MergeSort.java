@@ -1,5 +1,5 @@
-import java.util.*;
-class mergesor {
+﻿import java.util.*;
+class MergeSort {
     public void merge(int arr[],int low,int mid,int high){
         List<Integer> temp=new ArrayList<>();
         int left =low,right=mid+1;

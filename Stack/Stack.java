@@ -1,4 +1,4 @@
-class stackarray{
+﻿class Stack{
     int top;
     int capacity;
     int[] stack;

@@ -1,4 +1,4 @@
-class Solution {
+﻿class InsertAtEnd {
     public Node insertAtEnd(Node head, int x) {
         // code here
         Node end=new Node(x);

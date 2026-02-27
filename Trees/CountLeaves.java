@@ -1,5 +1,5 @@
-/* A Binary Tree node
-class Node
+﻿/* A Binary Tree node
+class CountLeaves
 {
     int data;
     Node left, right;

@@ -1,4 +1,4 @@
-class Solution {
+﻿class DeleteDuplicates {
     public ListNode deleteDuplicates(ListNode head) {
         if(head==null) return null;
         ListNode slow=head;

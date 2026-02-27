@@ -1,4 +1,4 @@
-public class leetcode3432 {
+﻿public class CountPartitions {
     
 }
 

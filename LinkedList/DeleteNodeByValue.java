@@ -1,4 +1,4 @@
-class Solution {
+﻿class DeleteNodeByValue {
     Node deleteNode(Node head, int x) {
         // code here
         if(head ==null){

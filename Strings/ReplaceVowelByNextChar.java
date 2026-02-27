@@ -1,4 +1,4 @@
-public class replaceovelbynextchar {
+﻿public class ReplaceVowelByNextChar {
     public static void main(String[] args){
         String str="hellowqueri";
         for(int i=0;i<str.length();i++){

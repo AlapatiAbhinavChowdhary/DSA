@@ -1,4 +1,4 @@
-class Solution {
+﻿class MaxFrequencyElements {
     public int maxFrequencyElements(int[] nums) {
         int[] arr=new int[101];
         for(int a:nums){

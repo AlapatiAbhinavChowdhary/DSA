@@ -1,4 +1,4 @@
-class Node{
+﻿class DoublyLinkedList{
     int data;
     Node prev;
     Node next;

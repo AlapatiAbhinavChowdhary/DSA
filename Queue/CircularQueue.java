@@ -1,5 +1,5 @@
-//this is used because after dequeue operation the space is wasted 
-class circular{
+﻿//this is used because after dequeue operation the space is wasted 
+class CircularQueue{
     int[] queue;
     int front,rear,capacity,size;
 

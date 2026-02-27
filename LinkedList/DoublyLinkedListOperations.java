@@ -1,6 +1,6 @@
-// Online Java Compiler
+﻿// Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-class Node{
+class DoublyLinkedListOperations{
     int data;
     Node next;
     Node prev;

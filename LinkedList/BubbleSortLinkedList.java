@@ -1,4 +1,4 @@
-class Node{
+﻿class BubbleSortLinkedList{
     int data;
     Node next;
     Node(int data){

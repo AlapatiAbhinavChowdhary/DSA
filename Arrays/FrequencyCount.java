@@ -1,6 +1,6 @@
-import java.util.HashMap;
+﻿import java.util.HashMap;
 import java.util.Map;
-public class frequency {
+public class FrequencyCount {
     public void freq(int[] arr,int n){
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i=0;i<n;i++){

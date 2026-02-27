@@ -1,4 +1,4 @@
-class Solution {
+﻿class RemoveLastNode {
     public Node removeLastNode(Node head) {
         // code here
         if(head == null || head.next == null){

@@ -1,5 +1,5 @@
-import java.util.*;
-public class subsetofn {
+﻿import java.util.*;
+public class SubsetsOfN {
     public static void printsubsets(ArrayList<Integer> subset){
         for(int i=-0;i<subset.size();i++){
             System.out.print(subset.get(i)+" ");

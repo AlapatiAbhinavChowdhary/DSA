@@ -1,4 +1,4 @@
-class solution{
+﻿class SumOddFrequency{
     public int sumoddfreq(int[] arr){
         int n=arr.length;
         int sum=0;

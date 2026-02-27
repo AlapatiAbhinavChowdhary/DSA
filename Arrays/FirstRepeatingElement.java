@@ -1,4 +1,4 @@
-public class gfgfirstrepele {
+﻿public class FirstRepeatingElement {
     
     public static int firstRepeated(int[] arr) {
         // code here
