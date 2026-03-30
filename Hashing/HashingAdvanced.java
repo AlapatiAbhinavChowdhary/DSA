@@ -1,4 +1,6 @@
-﻿import java.util.*;
+package Hashing;
+
+import java.util.*;
 public class HashingAdvanced {
     public static void main(String[] args){
         HashMap<String,Integer> map=new HashMap<>();

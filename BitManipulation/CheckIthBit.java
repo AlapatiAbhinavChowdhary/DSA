@@ -1,3 +1,5 @@
+package BitManipulation;
+
 class CheckIthBit {
     public static boolean checkIthBit(int n, int i) {
         String binary = Integer.toBinaryString(n);

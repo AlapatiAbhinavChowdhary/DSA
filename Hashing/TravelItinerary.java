@@ -1,4 +1,6 @@
-﻿import java.util.*;
+package Hashing;
+
+import java.util.*;
 public class TravelItinerary {
     public static String getstart(HashMap<String,String> tickets){
         HashMap<String,String> rev=new HashMap<>();

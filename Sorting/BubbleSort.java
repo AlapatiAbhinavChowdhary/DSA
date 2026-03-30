@@ -1,4 +1,6 @@
-public class bubblesort {
+package Sorting;
+
+public class BubbleSort {
     public static void main(String[] args){
         int[] arr={1,3,5,4,2,7,8};
         int n=arr.length;

@@ -1,4 +1,8 @@
-﻿public class CountPartitions {
+package Arrays;
+
+
+import java.util.*;
+public class CountPartitions {
     
 }
 

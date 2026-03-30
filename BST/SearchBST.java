@@ -1,4 +1,6 @@
-﻿/**
+package BST;
+
+/**
  * Definition for a binary tree node.
  * public class SearchBST {
  *     int val;
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class SearchBSTSolution {
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null) return null;
         if(root.val==val) return root;

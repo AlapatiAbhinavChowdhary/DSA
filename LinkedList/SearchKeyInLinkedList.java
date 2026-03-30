@@ -1,4 +1,8 @@
-﻿class SearchKeyInLinkedList {
+package LinkedList;
+
+
+import java.util.*;
+class SearchKeyInLinkedList {
     public boolean searchKey(Node head, int key) {
         // Code here
         Node temp=head;

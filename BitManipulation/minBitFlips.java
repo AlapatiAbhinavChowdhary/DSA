@@ -1,4 +1,5 @@
-class Solution {
+package BitManipulation;
+class minBitFlipsSolution {
     public int minBitFlips(int start, int goal) {
         int num=start^goal;
         int count=0;

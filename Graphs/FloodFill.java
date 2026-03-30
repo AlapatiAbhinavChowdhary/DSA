@@ -1,4 +1,5 @@
-class Solution {
+package Graphs;
+class FloodFillSolution {
     void dfs(int[][] image, int sr, int sc, int ne, int original) {
         if (sr < 0 || sc < 0 || sr >= image.length || sc >= image[0].length)
             return;

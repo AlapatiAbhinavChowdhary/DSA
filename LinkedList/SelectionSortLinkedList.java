@@ -1,21 +1,25 @@
-﻿class SelectionSortLinkedList{
+package LinkedList;
+
+
+import java.util.*;
+class SelectionNode {
     int data;
-    Node next;
-    Node(int data){
+    SelectionNode next;
+    SelectionNode(int data){
         this.data=data;
         this.next=null;
     }
 }
 
-public class selectionsortlinkedlist {
-    Node head;
+public class SelectionSortLinkedList {
+    SelectionNode head;
 
     public void add(int data){
-        Node newNode=new Node(data);
+        SelectionNode newNode = new SelectionNode(data);
         if(head==null){
             head=newNode;
         }else{
-            Node curr=head;
+            SelectionNode curr=head;
             while(curr.next!=null){
                 curr=curr.next;
             }
@@ -23,9 +27,9 @@ public class selectionsortlinkedlist {
         }
     }
     public void selectionsort(){
-        for(Node i=head;i!=null&&i.next!=null;i=i.next){
-            Node min=i;
-            for(Node j=i.next;j!=null;j=j.next){
+        for(SelectionNode i=head;i!=null&&i.next!=null;i=i.next){
+            SelectionNode min=i;
+            for(SelectionNode j=i.next;j!=null;j=j.next){
                 if(j.data<min.data){
                     min=j;
                 }
@@ -39,7 +43,7 @@ public class selectionsortlinkedlist {
         }
     }
     public void printlist(){
-        Node curr=head;
+        SelectionNode curr=head;
         while(curr!=null){
             System.out.print(curr.data+" ");
             curr=curr.next;
@@ -47,7 +51,7 @@ public class selectionsortlinkedlist {
         System.out.println();
     }
     public static void main(String[] args){
-        selectionsortlinkedlist list=new selectionsortlinkedlist();
+        SelectionSortLinkedList list = new SelectionSortLinkedList();
         list.add(64);
         list.add(25);
         list.add(12);

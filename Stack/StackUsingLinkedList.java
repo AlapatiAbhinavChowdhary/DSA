@@ -1,4 +1,8 @@
-﻿// Node class
+package Stack;
+
+
+import java.util.*;
+// Node class
 /* class StackUsingLinkedList {
     int data;
     Node next;
@@ -10,8 +14,17 @@
 } */
 
 // Stack class
+class StackNode {
+    int data;
+    StackNode next;
+
+    StackNode(int data) {
+        this.data = data;
+    }
+}
+
 class myStack {
-    Node head=null;
+    StackNode head=null;
     int n=0;
     public myStack() {
         // Initialize your data members
@@ -26,7 +39,7 @@ class myStack {
 
     public void push(int x) {
         // Adds an element x at the rear of the stack.
-        Node newnode=new Node(x);
+        StackNode newnode = new StackNode(x);
         newnode.next=head;
         head=newnode;
         n++;

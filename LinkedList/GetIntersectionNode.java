@@ -1,4 +1,8 @@
-﻿/**
+package LinkedList;
+
+
+import java.util.*;
+/**
  * Definition for singly-linked list.
  * public class GetIntersectionNode {
  *     int val;
@@ -9,7 +13,7 @@
  *     }
  * }
  */
-public class Solution {
+public class GetIntersectionNode {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         int n1=0,n2=0;
         ListNode curr1=headA;

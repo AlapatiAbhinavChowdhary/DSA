@@ -1,3 +1,5 @@
+package Hashing;
+
 import java.util.*;
 public class HashingExample {
     public static void main(String[] args){

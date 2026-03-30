@@ -1,4 +1,8 @@
-﻿/**
+package BST;
+
+
+import java.util.*;
+/**
  * Definition for a binary tree node.
  * public class TwoSumInBST {
  *     int val;
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class Solution {
+class TwoSumInBSTSolution {
     static void inorder(TreeNode root,ArrayList<Integer> arr){
         if(root==null) return;
         inorder(root.left,arr);

@@ -1,4 +1,6 @@
-﻿import java.util.*;
+package Queue;
+
+import java.util.*;
 class MaxHeap {
     public static void main(String[] args) {
         PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());

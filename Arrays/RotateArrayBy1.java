@@ -1,4 +1,8 @@
-public class rotatearrayby1 {
+package Arrays;
+
+
+import java.util.*;
+public class RotateArrayBy1 {
     static void rotate(int arr[]){
         int n=arr.length;
         int fi=arr[0];

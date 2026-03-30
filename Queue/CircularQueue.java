@@ -1,9 +1,13 @@
-﻿//this is used because after dequeue operation the space is wasted 
-class CircularQueue{
+package Queue;
+
+
+import java.util.*;
+//this is used because after dequeue operation the space is wasted 
+class CircularQueueArray {
     int[] queue;
     int front,rear,capacity,size;
 
-    circular(int capacity){
+    CircularQueueArray(int capacity){
         this.capacity=capacity;
         queue=new int[capacity];
         front =0;
@@ -50,9 +54,9 @@ class CircularQueue{
     }
 }
 
-public class circularqueue {
+public class CircularQueue {
     public static void main(String[] args){
-        circular cq=new circular(5);
+        CircularQueueArray cq = new CircularQueueArray(5);
         cq.enqueue(10);
         cq.enqueue(20); 
         cq.enqueue(30);

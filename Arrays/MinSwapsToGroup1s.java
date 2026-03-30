@@ -1,4 +1,8 @@
-﻿class MinSwapsToGroup1s {
+package Arrays;
+
+
+import java.util.*;
+class MinSwapsToGroup1s {
     public int minSwaps(int[] nums) {
         int ws=0;
         int n=nums.length;

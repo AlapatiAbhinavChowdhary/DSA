@@ -1,4 +1,6 @@
-﻿class CountOpsToZero{
+package Math;
+
+class CountOpsToZero{
     public static int countopertoobtainzero(int num1,int num2){
         int count =0;
         while(num1!=0 && num2!=0){

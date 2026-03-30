@@ -1,4 +1,6 @@
-﻿import java.util.*;
+package Queue;
+
+import java.util.*;
 class SimplePriorityQueue {
     public static void main(String[] args) {
         PriorityQueue<Integer> pq=new PriorityQueue<>();

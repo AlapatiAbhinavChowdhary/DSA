@@ -1,4 +1,8 @@
-﻿/*
+package Trees;
+
+
+import java.util.*;
+/*
 class TopView {
     int data;
     Node left, right;
@@ -10,7 +14,7 @@ class TopView {
     }
 }
 */
-class Solution {
+class TopViewSolution {
     static class pair{
         Node node;
         int level;

@@ -1,4 +1,8 @@
-﻿public class InsertAtPosition {
+package LinkedList;
+
+
+import java.util.*;
+public class InsertAtPosition {
     // public static int[] insertat(int[] arr,int pos,int val){
     //     int[] newarr=new int[arr.length+1];
     //     for(int i=0;i<pos;i++){

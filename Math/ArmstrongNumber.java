@@ -1,4 +1,6 @@
-﻿public class ArmstrongNumber {
+package Math;
+
+public class ArmstrongNumber {
     public static void main(String[] args){
         int n=153;
         int sum=0;

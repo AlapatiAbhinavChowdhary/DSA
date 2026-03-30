@@ -1,6 +1,7 @@
-import java.util.HashSet;
+package Arrays;
 
-class Solution {
+import java.util.HashSet;
+class LongestSubarrayTwoDistinctSolution {
     public int totalElements(int[] arr) {
         // code here
         int n = arr.length;

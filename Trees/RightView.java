@@ -1,4 +1,8 @@
-﻿/**
+package Trees;
+
+
+import java.util.*;
+/**
  * Definition for a binary tree node.
  * public class RightView {
  *     int val;
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class Solution {
+class RightViewSolution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> arr=new ArrayList<>();
         if(root==null) return arr;

@@ -1,4 +1,6 @@
-﻿public class CaseConversionInString {
+package Strings;
+
+public class CaseConversionInString {
     public static void main(String[] args){
         String str="WcEssA";
         StringBuilder result=new StringBuilder();

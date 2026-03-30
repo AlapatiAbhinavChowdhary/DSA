@@ -1,4 +1,8 @@
-﻿class InsertAtFront {
+package LinkedList;
+
+
+import java.util.*;
+class InsertAtFront {
     public Node insertAtFront(Node head, int x) {
         // code here
         Node newhead=new Node(x);

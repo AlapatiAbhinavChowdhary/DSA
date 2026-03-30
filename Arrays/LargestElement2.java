@@ -1,4 +1,6 @@
-﻿import java.util.*;
+package Arrays;
+
+import java.util.*;
 public class LargestElement2 {
     static void largest(int[] arr,int n){
         int max=Integer.MIN_VALUE;

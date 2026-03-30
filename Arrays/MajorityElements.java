@@ -1,4 +1,8 @@
-public class majorityelements {
+package Arrays;
+
+
+import java.util.*;
+public class MajorityElements {
     
 }
 // class Solution {

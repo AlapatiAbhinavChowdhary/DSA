@@ -1,4 +1,6 @@
-﻿public class SumOfOddDigits {
+package Math;
+
+public class SumOfOddDigits {
     public static void main(String[] args){
         int n=2357649;
         int sum=0;

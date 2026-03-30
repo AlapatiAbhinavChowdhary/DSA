@@ -1,3 +1,7 @@
+package LinkedList;
+
+
+import java.util.*;
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -9,7 +13,7 @@
  *     }
  * }
  */
-public class Solution {
+public class hasCycle {
     public boolean hasCycle(ListNode head) {
         ListNode fast=head;
         ListNode slow=head;

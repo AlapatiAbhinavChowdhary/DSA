@@ -1,4 +1,6 @@
-﻿public class MazePaths {
+package Backtracking;
+
+public class MazePaths {
     public static int countpath(int i,int j,int n,int m){
         if(i==n||j==m){
             return 0;

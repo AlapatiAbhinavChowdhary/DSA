@@ -1,3 +1,5 @@
+package BitManipulation;
+
 class NoSetBits2 {
     public static int nosetbits(int n) {
         int c = 0;

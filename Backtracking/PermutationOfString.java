@@ -1,4 +1,6 @@
-public class permutationofstring {
+package Backtracking;
+
+public class PermutationOfString {
     public static void permute(String str,String permutation){
         if(str.length()==0){
             System.out.println(permutation);

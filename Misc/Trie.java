@@ -1,4 +1,6 @@
-public class trie {
+package Misc;
+
+public class Trie {
     static class Node{
         Node[] children;
         boolean isend;

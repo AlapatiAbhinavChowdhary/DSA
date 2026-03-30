@@ -1,4 +1,6 @@
-﻿/**
+package BST;
+
+/**
  * Definition for a binary tree node.
  * public class InsertIntoBST {
  *     int val;
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class InsertIntoBSTSolution {
     public TreeNode insertIntoBST(TreeNode root, int val) {
         if(root==null) return new TreeNode(val);
         if(root.val>val){

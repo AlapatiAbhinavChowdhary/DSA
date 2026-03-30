@@ -1,4 +1,6 @@
-﻿import java.util.ArrayList;
+package Backtracking;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class NQueens {
@@ -101,7 +103,7 @@ public class NQueens {
     }
 
     public static void main(String[] args) {
-        nqueen obj = new nqueen();
+        NQueens obj = new NQueens();
         int n = 4; // change n as needed
         List<List<String>> solutions = obj.solveNQueens(n);
 

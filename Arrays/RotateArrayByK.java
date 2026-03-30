@@ -1,4 +1,8 @@
-public class rotatearraybyk {
+package Arrays;
+
+
+import java.util.*;
+public class RotateArrayByK {
     static void rotatebyk(int arr[],int s,int e){
         while(s<e){
             int temp=arr[e];

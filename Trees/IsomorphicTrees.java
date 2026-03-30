@@ -1,4 +1,6 @@
-﻿import java.util.HashMap;
+package Trees;
+
+import java.util.HashMap;
 
 public class IsomorphicTrees {
 

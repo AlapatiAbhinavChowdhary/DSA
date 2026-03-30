@@ -1,6 +1,10 @@
-﻿class AsteroidCollision {
+package Stack;
+
+
+import java.util.*;
+class AsteroidCollision {
     public int[] asteroidCollision(int[] as) {
-        Stack<Integer> st=new Stack<>();
+        java.util.Stack<Integer> st = new java.util.Stack<>();
         for(int a:as){
             if(a>0){
                 st.push(a);

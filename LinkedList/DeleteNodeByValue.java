@@ -1,4 +1,8 @@
-﻿class DeleteNodeByValue {
+package LinkedList;
+
+
+import java.util.*;
+class DeleteNodeByValue {
     Node deleteNode(Node head, int x) {
         // code here
         if(head ==null){

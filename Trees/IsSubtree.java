@@ -1,4 +1,6 @@
-﻿/**
+package Trees;
+
+/**
  * Definition for a binary tree node.
  * public class IsSubtree {
  *     int val;
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class IsSubtreeSolution {
     public Boolean isIdentical(TreeNode root,TreeNode subRoot){
         if(root==null && subRoot==null){
             return true;

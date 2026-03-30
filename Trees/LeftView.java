@@ -1,4 +1,8 @@
-﻿class LeftView {
+package Trees;
+
+
+import java.util.*;
+class LeftView {
     public ArrayList<Integer> leftView(Node root) {
         // code here
         ArrayList<Integer> arr=new ArrayList<>();

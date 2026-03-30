@@ -1,4 +1,5 @@
-class Solution {
+package BitManipulation;
+class singleNumberinarrSolution {
     public int singleNumber(int[] nums) {
         int ans=0;
         for(int n:nums){

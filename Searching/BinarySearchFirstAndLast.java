@@ -1,4 +1,6 @@
-﻿public class BinarySearchFirstAndLast {
+package Searching;
+
+public class BinarySearchFirstAndLast {
     public static int f(int nums[],int target){
         int s=0;
         int e=nums.length-1;

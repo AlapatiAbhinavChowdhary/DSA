@@ -1,4 +1,8 @@
-﻿/**
+package Trees;
+
+
+import java.util.*;
+/**
  * Definition for a binary tree node.
  * public class ZigzagLevelOrder {
  *     int val;
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class Solution {
+class ZigzagLevelOrderSolution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> res=new ArrayList<>();
         if(root==null) return res;

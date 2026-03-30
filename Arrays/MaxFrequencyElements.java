@@ -1,4 +1,8 @@
-﻿class MaxFrequencyElements {
+package Arrays;
+
+
+import java.util.*;
+class MaxFrequencyElements {
     public int maxFrequencyElements(int[] nums) {
         int[] arr=new int[101];
         for(int a:nums){

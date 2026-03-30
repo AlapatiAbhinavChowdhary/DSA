@@ -1,4 +1,6 @@
-public class fibonacci {
+package Recursion;
+
+public class Fibonacci {
     public static void printfib(int a,int b,int n){
         if(n==0){
             return;

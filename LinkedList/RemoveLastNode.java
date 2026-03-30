@@ -1,4 +1,8 @@
-﻿class RemoveLastNode {
+package LinkedList;
+
+
+import java.util.*;
+class RemoveLastNode {
     public Node removeLastNode(Node head) {
         // code here
         if(head == null || head.next == null){

@@ -1,3 +1,5 @@
+package BitManipulation;
+
 class XorSwap {
 
     public static void swap(int[] arr) {

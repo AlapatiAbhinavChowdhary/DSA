@@ -1,8 +1,10 @@
-﻿import java.util.*;
+package Stack;
+
+import java.util.*;
 public class QueueUsing2Stacks {
     static class queue{
-        static Stack<Integer> s1=new Stack<>();
-        static Stack<Integer> s2=new Stack<>();
+        static java.util.Stack<Integer> s1 = new java.util.Stack<>();
+        static java.util.Stack<Integer> s2 = new java.util.Stack<>();
 
         public static boolean isEmpty(){
             return s1.isEmpty();

@@ -1,4 +1,8 @@
-﻿class InsertAtEnd {
+package LinkedList;
+
+
+import java.util.*;
+class InsertAtEnd {
     public Node insertAtEnd(Node head, int x) {
         // code here
         Node end=new Node(x);

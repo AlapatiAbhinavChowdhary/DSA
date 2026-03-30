@@ -1,4 +1,8 @@
-﻿public class FirstRepeatingElement {
+package Arrays;
+
+
+import java.util.*;
+public class FirstRepeatingElement {
     
     public static int firstRepeated(int[] arr) {
         // code here

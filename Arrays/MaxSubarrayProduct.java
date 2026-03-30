@@ -1,4 +1,8 @@
-public class maxsubarrayproduct {
+package Arrays;
+
+
+import java.util.*;
+public class MaxSubarrayProduct {
     public static int maxp(int[] arr){
         int maxp=arr[0];
         int minp=arr[0];

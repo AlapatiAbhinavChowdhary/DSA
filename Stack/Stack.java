@@ -1,9 +1,13 @@
-﻿class Stack{
+package Stack;
+
+
+import java.util.*;
+class StackArray {
     int top;
     int capacity;
     int[] stack;
 
-    stackarray(int size){
+    StackArray(int size){
         capacity=size;
         stack=new int[capacity];
         top=-1;
@@ -46,9 +50,9 @@
         }
     }
 }
-public class stack{
+public class Stack {
     public static void main(String[] args){
-        stackarray s=new stackarray(5);
+        StackArray s = new StackArray(5);
         s.push(10);
         s.push(20); 
         s.push(30);

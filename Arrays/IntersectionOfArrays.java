@@ -1,4 +1,6 @@
-﻿import java.util.HashSet;
+package Arrays;
+
+import java.util.HashSet;
 public class IntersectionOfArrays {
     public int findIntersection(int[] arr1, int[] arr2) {
         HashSet<Integer> set=new HashSet<>();

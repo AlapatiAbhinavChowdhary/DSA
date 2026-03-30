@@ -1,4 +1,8 @@
-﻿class SumOfUniqueElements {
+package Arrays;
+
+
+import java.util.*;
+class SumOfUniqueElements {
     public int sumOfUnique(int[] nums) {
         int[] freq = new int[101];
         

@@ -1,5 +1,7 @@
-﻿import java.util.*;
-class MergeSort {
+package Sorting;
+
+import java.util.*;
+class MergeSorter {
     public void merge(int arr[],int low,int mid,int high){
         List<Integer> temp=new ArrayList<>();
         int left =low,right=mid+1;
@@ -35,10 +37,10 @@ class MergeSort {
         merge(arr,low,mid,high);
     }
 }
-public class mergesort {
+public class MergeSort {
     public static void main(String[] args){
         int arr[]={38,27,43,3,9,82,10};
-        mergesor ms=new mergesor();
+        MergeSorter ms = new MergeSorter();
         ms.merges(arr,0,arr.length-1);
         System.out.println("Sorted array: ");
         for(int i=0;i<arr.length;i++){

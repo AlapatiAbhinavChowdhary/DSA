@@ -1,5 +1,7 @@
+package Arrays;
+
 import java.util.*;
-public class twosum {
+public class TwoSum {
     static int[] two(int[] arr,int n,int t){
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){

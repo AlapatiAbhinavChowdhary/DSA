@@ -1,3 +1,5 @@
+package Trees;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class SymmetricTreeSolution {
     public boolean isSymmetric(TreeNode root) {
         return is(root.left, root.right);
     }

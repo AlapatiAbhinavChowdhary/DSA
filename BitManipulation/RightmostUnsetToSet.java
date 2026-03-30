@@ -1,3 +1,5 @@
+package BitManipulation;
+
 class RightmostUnsetToSet {
     public static int rightmosttoset(int n) {
         return n | (n + 1);

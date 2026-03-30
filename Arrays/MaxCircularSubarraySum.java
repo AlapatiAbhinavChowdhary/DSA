@@ -1,4 +1,8 @@
-public class maxcircularsubarraysum {
+package Arrays;
+
+
+import java.util.*;
+public class MaxCircularSubarraySum {
     public static int kadane(int[] arr){
         int tot=0;
         int currmax=0,maxsum=arr[0];

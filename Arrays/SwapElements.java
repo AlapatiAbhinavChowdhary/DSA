@@ -1,4 +1,8 @@
-﻿public class SwapElements {
+package Arrays;
+
+
+import java.util.*;
+public class SwapElements {
     public static void swapping(int a,int b){
         int temp=a;
         b=a;

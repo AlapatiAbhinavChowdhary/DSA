@@ -1,19 +1,23 @@
-﻿class EvenNodesInLinkedList{
+package LinkedList;
+
+
+import java.util.*;
+class EvenNode {
     int data;
-    Node next;
-    Node(int data){
+    EvenNode next;
+    EvenNode(int data){
         this.data=data;
         this.next=null;
     }
 }
-public class eveninlinkedlist {
-    Node head;
+public class EvenNodesInLinkedList {
+    EvenNode head;
     public void add(int data){
-        Node newNode = new Node(data);
+        EvenNode newNode = new EvenNode(data);
         if(head==null){
             head=newNode;        
         }else{
-            Node temp = head;
+            EvenNode temp = head;
             while(temp.next!=null){
                 temp=temp.next;
             }
@@ -21,7 +25,7 @@ public class eveninlinkedlist {
         }
     }
     public void displayeven(){
-        Node curr=head;
+        EvenNode curr=head;
         while(curr!=null){
             if(curr.data%2==0){
                 System.out.println(curr.data);
@@ -31,7 +35,7 @@ public class eveninlinkedlist {
         }
     }    
     public static void main(String[] args){
-        eveninlinkedlist list=new eveninlinkedlist();
+        EvenNodesInLinkedList list = new EvenNodesInLinkedList();
         list.add(10);
         list.add(15);   
         list.add(20);

@@ -1,4 +1,6 @@
-public class factorial {
+package Recursion;
+
+public class Factorial {
     public static int factorialofn(int n){
         if(n==0 || n==1){
             return 1;

@@ -1,4 +1,6 @@
-﻿/**
+package Trees;
+
+/**
  * Definition for a binary tree node.
  * public class InvertTree {
  *     int val;
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class InvertTreeSolution {
     void swap(TreeNode root){
         TreeNode temp=root.left;
         root.left=root.right;

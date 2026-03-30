@@ -1,4 +1,7 @@
-class Solution {
+package BitManipulation;
+
+import java.util.*;
+class subsetsSolution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> arr=new ArrayList<>();
         int n=nums.length;

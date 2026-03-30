@@ -1,4 +1,8 @@
-﻿/*
+package Trees;
+
+
+import java.util.*;
+/*
 class BottomView {
     int data;
     Node left;
@@ -11,8 +15,7 @@ class BottomView {
     }
 }
 */
-
-class Solution {
+class BottomViewSolution {
     static class pair{
         Node node;
         int level;

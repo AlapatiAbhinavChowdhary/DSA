@@ -1,4 +1,8 @@
-﻿/*
+package Trees;
+
+
+import java.util.*;
+/*
  * Left View of Binary Tree
  * GFG: https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
  *
@@ -23,8 +27,7 @@ class LeftViewBinaryTree {
     }
 }
 */
-
-class Solution {
+class LeftViewBinaryTreeSolution {
     void ans(Node root, int lev, ArrayList<Integer> arr) {
         if (root == null)
             return;

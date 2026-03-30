@@ -1,4 +1,6 @@
-﻿/**
+package Trees;
+
+/**
  * Definition for a binary tree node.
  * public class IsSameTree {
  *     int val;
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class IsSameTreeSolution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p==null && q==null) return true;
         if((p==null && q!=null) || (p!=null&&q==null)) return false;

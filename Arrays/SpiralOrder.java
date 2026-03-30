@@ -1,4 +1,8 @@
-﻿class SpiralOrder {
+package Arrays;
+
+
+import java.util.*;
+class SpiralOrder {
     public List<Integer> spiralOrder(int[][] matrix) {
         int top=0;
         int right=matrix[0].length-1;

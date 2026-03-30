@@ -1,19 +1,23 @@
-﻿class DoublyLinkedList{
+package LinkedList;
+
+
+import java.util.*;
+class DoublyNode {
     int data;
-    Node prev;
-    Node next;
-    Node(int data){
+    DoublyNode prev;
+    DoublyNode next;
+    DoublyNode(int data){
         this.data=data;
         this.prev=null;
         this.next=null;
     }
 }
 
-public class doublelinkedlist {
-    Node head;
-    Node tail;
+public class DoublyLinkedList {
+    DoublyNode head;
+    DoublyNode tail;
     public void insertatend(int data){
-        Node newNode=new Node(data);
+        DoublyNode newNode = new DoublyNode(data);
         if(head==null){
             head=tail=newNode;
             return;
@@ -23,7 +27,7 @@ public class doublelinkedlist {
         tail=newNode;
     }
     public void insertatbeginning(int data){
-        Node newNode=new Node(data);
+        DoublyNode newNode = new DoublyNode(data);
         if(head==null){
             head=tail=newNode;
             return;
@@ -44,7 +48,7 @@ public class doublelinkedlist {
             if(tail!=null) tail.next=null;
             return;
         }
-        Node temp=head.next;
+        DoublyNode temp=head.next;
         while(temp!=null&&temp.data!=data){
             temp=temp.next;
         }
@@ -53,7 +57,7 @@ public class doublelinkedlist {
         if(temp.next!=null) temp.next.prev=temp.prev;
     }
     public void printlist(){
-        Node curr=head;
+        DoublyNode curr=head;
         while(curr!=null){
             System.out.print(curr.data+" ");
             curr=curr.next;
@@ -61,7 +65,7 @@ public class doublelinkedlist {
         System.out.println();
     }
     public static void main(String[] args){
-        doublelinkedlist list=new doublelinkedlist();
+        DoublyLinkedList list = new DoublyLinkedList();
         list.insertatend(10);
         list.insertatend(20);
         list.insertatbeginning(5);

@@ -1,4 +1,8 @@
-public class rotatearray {
+package Arrays;
+
+
+import java.util.*;
+public class RotateArray {
     public static void rotate(int arr[]){
         int n=arr.length;
         for(int i=0;i<n/2;i++){

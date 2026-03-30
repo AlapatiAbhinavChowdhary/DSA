@@ -1,4 +1,8 @@
-﻿/**
+package Trees;
+
+
+import java.util.*;
+/**
  * Definition for a binary tree node.
  * public class PostorderTraversal {
  *     int val;
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class Solution {
+class PostorderTraversalSolution {
     void postorder(TreeNode root,List<Integer> res){
         if(root==null) return;
         postorder(root.left,res);

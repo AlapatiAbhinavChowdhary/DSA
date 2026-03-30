@@ -1,4 +1,6 @@
-public class recursiveinsertionsort {
+package Sorting;
+
+public class RecursiveInsertionSort {
     static void insertionsort(int[] arr,int i,int n){
         if(i==n) return;
         int j=i;

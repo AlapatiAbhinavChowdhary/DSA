@@ -1,20 +1,24 @@
-﻿class SingleLinkedList{
+package LinkedList;
+
+
+import java.util.*;
+class SingleNode {
     int data;
-    Node next;
-    Node(int data){
+    SingleNode next;
+    SingleNode(int data){
         this.data=data;
         this.next=null;
     }
 }
 public class SingleLinkedList {
-    Node head;
+    SingleNode head;
 
     public void add(int data){
-        Node newNode=new Node(data);
+        SingleNode newNode = new SingleNode(data);
         if(head==null){
             head=newNode;
         }else{
-            Node curr=head;
+            SingleNode curr=head;
             while(curr.next!=null){
                 curr=curr.next;
             }
@@ -22,7 +26,7 @@ public class SingleLinkedList {
         }
     }
     public void display(){
-        Node curr=head;
+        SingleNode curr=head;
         while(curr!=null){
             System.out.print(curr.data+" -> ");
             curr=curr.next;
@@ -30,13 +34,13 @@ public class SingleLinkedList {
         System.out.println("null");
     }
     public void insertAt(int index,int data){
-        Node newNode=new Node(data);
+        SingleNode newNode = new SingleNode(data);
         if(index==0){
             newNode.next=head;
             head=newNode;
             return;
         }
-        Node curr=head;
+        SingleNode curr=head;
         for(int i=0;i<index-1 && curr!=null;i++){
             curr=curr.next;
 
@@ -54,7 +58,7 @@ public class SingleLinkedList {
             head=head.next;
             return;
         }
-        Node curr=head;
+        SingleNode curr=head;
         while(curr.next!=null&&curr.next.data!=data){
             curr=curr.next;
         }
@@ -66,7 +70,7 @@ public class SingleLinkedList {
     }
 
     public boolean contains(int data){
-        Node curr=head;
+        SingleNode curr=head;
         while(curr!=null){
             if(curr.data==data) return true;
             curr=curr.next;
@@ -75,7 +79,7 @@ public class SingleLinkedList {
     }
     public int size(){
         int count=0;
-        Node curr=head;
+        SingleNode curr=head;
         while(curr!=null){
             count++;
             curr=curr.next;

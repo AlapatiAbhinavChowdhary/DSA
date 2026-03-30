@@ -1,17 +1,21 @@
-﻿class LinkedListBasics{
+package LinkedList;
+
+
+import java.util.*;
+class BasicListNode {
     int val;
-    ListNode next;
-    ListNode(int val){
+    BasicListNode next;
+    BasicListNode(int val){
         this.val=val;
         this.next=null;
     }
 }
-class Main {
+public class LinkedListBasics {
     public static void main(String[] args) {
-        ListNode head=new ListNode(1);
-        head.next=new ListNode(2);
-        head.next.next=new ListNode(3);
-        ListNode temp=head;
+        BasicListNode head = new BasicListNode(1);
+        head.next = new BasicListNode(2);
+        head.next.next = new BasicListNode(3);
+        BasicListNode temp=head;
         while(temp!=null){
             System.out.print(temp.val+"->");
             temp=temp.next;

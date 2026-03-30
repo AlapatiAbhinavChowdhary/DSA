@@ -1,4 +1,6 @@
-public class lowerbound {
+package Searching;
+
+public class LowerBound {
     public static void main(String[] args){
         int[] arr={1,2,3,4,5,6};
         int x=4;

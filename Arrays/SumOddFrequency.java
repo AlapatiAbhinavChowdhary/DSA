@@ -1,4 +1,8 @@
-﻿class SumOddFrequency{
+package Arrays;
+
+
+import java.util.*;
+class SumOddFrequency{
     public int sumoddfreq(int[] arr){
         int n=arr.length;
         int sum=0;

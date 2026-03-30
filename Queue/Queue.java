@@ -1,10 +1,14 @@
-﻿class Queue{
+package Queue;
+
+
+import java.util.*;
+class QueueArray {
     int [] arr;
     int front;
     int rear;
     int capacity;
 
-    Queuearay(int size){
+    QueueArray(int size){
         arr=new int[size];
         capacity=size;
         front=0;
@@ -51,9 +55,9 @@
 
 
 
-public class queue {
+public class Queue {
     public static void main(String[] args){
-        Queuearay q=new Queuearay(5);
+        QueueArray q = new QueueArray(5);
         q.enqueue(10);
         q.enqueue(20); 
         q.enqueue(30);

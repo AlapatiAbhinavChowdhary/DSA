@@ -1,4 +1,6 @@
-public class binarysearch {
+package Searching;
+
+public class BinarySearch {
     static int binary(int[] arr,int n,int t){
         int l=0,r=n-1;
         while(l<=r){

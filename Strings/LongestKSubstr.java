@@ -1,6 +1,7 @@
-import java.util.HashMap;
+package Strings;
 
-class Solution {
+import java.util.HashMap;
+class LongestKSubstrSolution {
     public int longestKSubstr(String s, int k) {
         int n = s.length();
         int left = 0;

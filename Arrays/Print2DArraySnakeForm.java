@@ -1,4 +1,8 @@
-﻿class Print2DArraySnakeForm {
+package Arrays;
+
+
+import java.util.*;
+class Print2DArraySnakeForm {
     // Function to return list of integers visited in snake pattern in matrix.
     static ArrayList<Integer> snakePattern(int matrix[][]) {
         // code here

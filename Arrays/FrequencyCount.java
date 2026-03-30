@@ -1,4 +1,6 @@
-﻿import java.util.HashMap;
+package Arrays;
+
+import java.util.HashMap;
 import java.util.Map;
 public class FrequencyCount {
     public void freq(int[] arr,int n){

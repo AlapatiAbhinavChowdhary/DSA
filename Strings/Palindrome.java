@@ -1,4 +1,6 @@
-public class palindrome {
+package Strings;
+
+public class Palindrome {
     public static void main(String[] args){
         int rev =0;
         int n=1331;

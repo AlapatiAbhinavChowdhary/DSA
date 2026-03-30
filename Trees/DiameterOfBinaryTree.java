@@ -1,4 +1,6 @@
-﻿/**
+package Trees;
+
+/**
  * Definition for a binary tree node.
  * public class DiameterOfBinaryTree {
  *     int val;
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class Solution {
+class DiameterOfBinaryTreeSolution {
     int res=0;
     public int diameterOfBinaryTree(TreeNode root) {
         dfs(root);

@@ -1,4 +1,8 @@
-﻿/**
+package Trees;
+
+
+import java.util.*;
+/**
  * Definition for a binary tree node.
  * public class LevelOrderTraversal {
  *     int val;
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class Solution {
+class LevelOrderTraversalSolution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> res=new ArrayList<>();
         if(root==null) return res;

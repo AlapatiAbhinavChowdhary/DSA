@@ -1,6 +1,7 @@
-import java.util.HashMap;
+package Arrays;
 
-class Solution {
+import java.util.HashMap;
+class LongestSubarrayTwoDistinctOptimalSolution {
     public int totalElements(int[] arr) {
         // code here
         HashMap<Integer, Integer> map = new HashMap<>();

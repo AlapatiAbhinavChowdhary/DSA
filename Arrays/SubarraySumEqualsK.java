@@ -1,4 +1,6 @@
-﻿// class SubarraySumEqualsK {
+package Arrays;
+
+// class SubarraySumEqualsK {
 //     public int subarraySum(int[] nums, int k) {
 //         int count = 0;
 
@@ -21,7 +23,7 @@
 
 import java.util.*;
 
-public class subarraysumequalk {
+public class SubarraySumEqualsK {
     public static void main(String args[]){
         int arr[]={10,2,-2,-20,10};
         int k=-10;

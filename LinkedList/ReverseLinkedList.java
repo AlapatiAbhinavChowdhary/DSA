@@ -1,4 +1,8 @@
-public class reverselinkedlist {
+package LinkedList;
+
+
+import java.util.*;
+public class ReverseLinkedList {
     static class Node{
         int val;
         Node next;

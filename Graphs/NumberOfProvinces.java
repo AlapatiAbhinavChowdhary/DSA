@@ -1,4 +1,6 @@
-﻿class NumberOfProvinces {
+package Graphs;
+
+class NumberOfProvinces {
 
     public int findCircleNum(int[][] isConnected) {
 

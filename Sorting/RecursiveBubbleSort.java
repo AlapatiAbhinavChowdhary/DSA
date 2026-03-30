@@ -1,3 +1,5 @@
+package Sorting;
+
 public class RecursiveBubbleSort {
     public static void bubblesort(int arr[],int n){
         if(n==1) return;

@@ -1,4 +1,8 @@
-﻿class LengthOfLinkedList {
+package LinkedList;
+
+
+import java.util.*;
+class LengthOfLinkedList {
     public int getCount(Node head) {
         // code here
         int n=1;

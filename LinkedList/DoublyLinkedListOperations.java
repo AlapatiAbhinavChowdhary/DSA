@@ -1,20 +1,24 @@
-﻿// Online Java Compiler
+package LinkedList;
+
+
+import java.util.*;
+// Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-class DoublyLinkedListOperations{
+class DoublyOpsNode {
     int data;
-    Node next;
-    Node prev;
-    Node(int data){
+    DoublyOpsNode next;
+    DoublyOpsNode prev;
+    DoublyOpsNode(int data){
         this.data=data;
         next=null;
         prev=null;
     }
 }
-class Main {
-    static Node head=null;
-    static Node tail=null;
+public class DoublyLinkedListOperations {
+    static DoublyOpsNode head=null;
+    static DoublyOpsNode tail=null;
     public static void insertionatbe(int val){
-    Node newNode=new Node(val);
+    DoublyOpsNode newNode = new DoublyOpsNode(val);
         if(head==null){
             head=newNode;
             tail=newNode;
@@ -24,9 +28,10 @@ class Main {
         head=newNode;
     }  
     public static void insertionatend(int val){
-        Node newNode=new Node(val);
+        DoublyOpsNode newNode = new DoublyOpsNode(val);
         if(tail==null){
             head=tail=newNode;
+            return;
         }
         tail.next=newNode;
         newNode.prev=tail;
@@ -55,7 +60,7 @@ class Main {
         tail.next=null;
     }
     public static void display(){
-        Node temp=head;
+        DoublyOpsNode temp=head;
         while(temp!=null){
             System.out.print(temp.data+ " ");
             temp=temp.next;

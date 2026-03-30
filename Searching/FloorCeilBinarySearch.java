@@ -1,4 +1,6 @@
-﻿public class FloorCeilBinarySearch {
+package Searching;
+
+public class FloorCeilBinarySearch {
     public static int findfloor(int[] arr,int x){
         int l=0,r=arr.length-1;
         int ans=-1;
@@ -35,7 +37,7 @@
     public static void main(String[] args){
         int[] arr={1,2,3,4,5,6,7,8,9};
         int x=5;
-        floorceil fc = new floorceil();
+        FloorCeilBinarySearch fc = new FloorCeilBinarySearch();
         int[] result = fc.getfloorceil(arr, x);
         System.out.println("Floor: " + result[0] + ", Ceil: " + result[1]);
     }

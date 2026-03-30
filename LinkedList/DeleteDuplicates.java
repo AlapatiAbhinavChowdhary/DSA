@@ -1,4 +1,8 @@
-﻿class DeleteDuplicates {
+package LinkedList;
+
+
+import java.util.*;
+class DeleteDuplicates {
     public ListNode deleteDuplicates(ListNode head) {
         if(head==null) return null;
         ListNode slow=head;

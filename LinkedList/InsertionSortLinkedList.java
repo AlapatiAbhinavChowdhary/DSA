@@ -1,19 +1,23 @@
-﻿class InsertionSortLinkedList{
+package LinkedList;
+
+
+import java.util.*;
+class InsertionNode {
     int data;
-    Node next;
-    Node(int data){
+    InsertionNode next;
+    InsertionNode(int data){
         this.data=data;
         this.next=null;
     }
 }
-public class insertionsortlinkedlist{
-    Node head;
+public class InsertionSortLinkedList {
+    InsertionNode head;
     public void add(int data){
-        Node newNode =new Node(data);
+        InsertionNode newNode = new InsertionNode(data);
         if(head==null){
             head=newNode;
         }else{
-            Node curr=head;
+            InsertionNode curr=head;
             while(curr.next!=null){
                 curr=curr.next;
             }
@@ -22,22 +26,22 @@ public class insertionsortlinkedlist{
     }
     public void insertionsort(){
         if(head==null ||head.next==null) return;
-        Node sorted=null;
-        Node curr=head;
+        InsertionNode sorted=null;
+        InsertionNode curr=head;
         while(curr!=null){
-            Node next = curr.next;
+            InsertionNode next = curr.next;
             sorted=sortedInsert(sorted,curr);
             curr=next;
         }
         head=sorted;
     }
-    private Node sortedInsert(Node sorted,Node newNode){
+    private InsertionNode sortedInsert(InsertionNode sorted, InsertionNode newNode){
         if(sorted ==null || newNode.data<sorted.data){
-            newNode=sorted;
+            newNode.next=sorted;
             return newNode;
 
         }
-        Node curr =sorted;
+        InsertionNode curr =sorted;
         while(curr.next!=null&&curr.next.data<newNode.data){
             curr=curr.next;
         }
@@ -46,7 +50,7 @@ public class insertionsortlinkedlist{
         return sorted;
     }
     public void printlist(){
-        Node curr=head;
+        InsertionNode curr=head;
         while(curr!=null){
             System.out.print(curr.data+" ");
             curr=curr.next;
@@ -54,7 +58,7 @@ public class insertionsortlinkedlist{
         System.out.println();
     }
     public static void main(String[] args){
-        insertionsortlinkedlist list=new insertionsortlinkedlist();
+        InsertionSortLinkedList list = new InsertionSortLinkedList();
         list.add(64);
         list.add(25);
         list.add(12);

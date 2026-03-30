@@ -1,4 +1,8 @@
-﻿/**
+package Trees;
+
+
+import java.util.*;
+/**
  * Definition for a binary tree node.
  * public class PreorderTraversal {
  *     int val;
@@ -13,7 +17,7 @@
  *     }
  * }
  */
-class Solution {
+class PreorderTraversalSolution {
     void preorder(TreeNode root,List<Integer> res){
         if(root==null){
             return;
