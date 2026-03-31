@@ -2,6 +2,7 @@ package BST;
 
 
 import java.util.*;
+
 /**
  * Definition for a binary tree node.
  * public class TwoSumInBST {
@@ -17,31 +18,30 @@ import java.util.*;
  *     }
  * }
  */
-class TwoSumInBSTSolution {
-    static void inorder(TreeNode root,ArrayList<Integer> arr){
-        if(root==null) return;
-        inorder(root.left,arr);
+class TwoSumInBST {
+    static void inorder(TreeNode root, ArrayList<Integer> arr) {
+        if (root == null) return;
+        inorder(root.left, arr);
         arr.add(root.val);
-        inorder(root.right,arr);
+        inorder(root.right, arr);
     }
+
     public boolean findTarget(TreeNode root, int k) {
-        if(root==null) return false;
-        ArrayList<Integer> arr=new ArrayList<>();
-        inorder(root,arr);
-        int n=arr.size();
-        int start=0;
-        int end=n-1;
-        int sum=0;
-        while(start<end){
-            sum=arr.get(start)+arr.get(end);
-            if(sum==k){
+        if (root == null) return false;
+        ArrayList<Integer> arr = new ArrayList<>();
+        inorder(root, arr);
+        int n = arr.size();
+        int start = 0;
+        int end = n - 1;
+        while (start < end) {
+            int sum = arr.get(start) + arr.get(end);
+            if (sum == k) {
                 return true;
-            }else if(sum>k){
+            } else if (sum > k) {
                 end--;
-            }else if(sum<k){
+            } else {
                 start++;
             }
-
         }
         return false;
     }

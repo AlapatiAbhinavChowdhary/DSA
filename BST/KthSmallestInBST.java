@@ -2,6 +2,7 @@ package BST;
 
 
 import java.util.*;
+
 /**
  * Definition for a binary tree node.
  * public class KthSmallestInBST {
@@ -17,18 +18,18 @@ import java.util.*;
  *     }
  * }
  */
-class KthSmallestInBSTSolution {
-    static void inorder(TreeNode root,ArrayList<Integer> arr){
-        if(root==null) return;
-        inorder(root.left,arr);
+class KthSmallestInBST {
+    static void inorder(TreeNode root, ArrayList<Integer> arr) {
+        if (root == null) return;
+        inorder(root.left, arr);
         arr.add(root.val);
-        inorder(root.right,arr);
+        inorder(root.right, arr);
     }
+
     public int kthSmallest(TreeNode root, int k) {
-        if(root==null) return -1;
-        ArrayList<Integer> arr=new ArrayList<>();
-        inorder(root,arr);
-        int n=arr.size();
-        return arr.get(k-1);
+        if (root == null) return -1;
+        ArrayList<Integer> arr = new ArrayList<>();
+        inorder(root, arr);
+        return arr.get(k - 1);
     }
 }

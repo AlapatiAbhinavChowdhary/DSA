@@ -2,6 +2,7 @@ package Trees;
 
 
 import java.util.*;
+
 /**
  * Definition for a binary tree node.
  * public class InorderTraversal {
@@ -17,20 +18,19 @@ import java.util.*;
  *     }
  * }
  */
-class InorderTraversalSolution {
-    void inorder(TreeNode root,List<Integer> res){
-        if(root==null){
+class InorderTraversal {
+    void inorder(TreeNode root, List<Integer> res) {
+        if (root == null) {
             return;
         }
-        inorder(root.left,res);
+        inorder(root.left, res);
         res.add(root.val);
-        inorder(root.right,res);
+        inorder(root.right, res);
     }
+
     public List<Integer> inorderTraversal(TreeNode root) {
-
-        List<Integer> res=new ArrayList<>();
-        inorder(root,res);
+        List<Integer> res = new ArrayList<>();
+        inorder(root, res);
         return res;
-
     }
 }

@@ -15,19 +15,21 @@ package Trees;
  *     }
  * }
  */
-class DiameterOfBinaryTreeSolution {
-    int res=0;
+class DiameterOfBinaryTree {
+    int res = 0;
+
     public int diameterOfBinaryTree(TreeNode root) {
         dfs(root);
         return res;
     }
-    private int dfs(TreeNode root){
-        if(root==null){
+
+    private int dfs(TreeNode root) {
+        if (root == null) {
             return 0;
         }
-        int l=dfs(root.left);
-        int r=dfs(root.right);
-        res=Math.max(res,l+r);
-        return 1+Math.max(l,r);
+        int l = dfs(root.left);
+        int r = dfs(root.right);
+        res = Math.max(res, l + r);
+        return 1 + Math.max(l, r);
     }
 }

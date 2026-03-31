@@ -2,6 +2,7 @@ package Trees;
 
 
 import java.util.*;
+
 /**
  * Definition for a binary tree node.
  * public class PostorderTraversal {
@@ -17,16 +18,17 @@ import java.util.*;
  *     }
  * }
  */
-class PostorderTraversalSolution {
-    void postorder(TreeNode root,List<Integer> res){
-        if(root==null) return;
-        postorder(root.left,res);
-        postorder(root.right,res);
+class PostorderTraversal {
+    void postorder(TreeNode root, List<Integer> res) {
+        if (root == null) return;
+        postorder(root.left, res);
+        postorder(root.right, res);
         res.add(root.val);
     }
+
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> res=new ArrayList<>();
-        postorder(root,res);
+        List<Integer> res = new ArrayList<>();
+        postorder(root, res);
         return res;
     }
 }

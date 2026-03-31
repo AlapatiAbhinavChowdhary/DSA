@@ -2,6 +2,7 @@ package LinkedList;
 
 
 import java.util.*;
+
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -14,13 +15,13 @@ import java.util.*;
  * }
  */
 public class hasCycle {
-    public boolean hasCycle(ListNode head) {
-        ListNode fast=head;
-        ListNode slow=head;
-        while(fast!=null && fast.next!=null){
-            fast=fast.next.next;
-            slow=slow.next;
-            if(fast==slow) return true;
+    public boolean hasCycleCheck(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) return true;
         }
         return false;
     }

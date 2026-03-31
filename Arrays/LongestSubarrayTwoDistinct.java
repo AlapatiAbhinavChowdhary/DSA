@@ -1,9 +1,9 @@
 package Arrays;
 
 import java.util.HashSet;
-class LongestSubarrayTwoDistinctSolution {
+
+class LongestSubarrayTwoDistinct {
     public int totalElements(int[] arr) {
-        // code here
         int n = arr.length;
         int max = 0;
         for (int i = 0; i < n; i++) {

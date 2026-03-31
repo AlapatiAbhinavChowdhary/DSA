@@ -1,9 +1,9 @@
 package Arrays;
 
 import java.util.HashMap;
-class LongestSubarrayTwoDistinctOptimalSolution {
+
+class LongestSubarrayTwoDistinctOptimal {
     public int totalElements(int[] arr) {
-        // code here
         HashMap<Integer, Integer> map = new HashMap<>();
         int left = 0;
         int max = 0;

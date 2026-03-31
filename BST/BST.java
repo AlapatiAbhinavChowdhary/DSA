@@ -1,141 +1,144 @@
 package BST;
 
 import java.util.*;
+
 public class BST {
-    static class Node{
+    static class Node {
         int data;
         Node left;
         Node right;
-        Node(int data){
-            this.data=data;
-            this.left=null;
-            this.right=null;
+
+        Node(int data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
         }
     }
 
-    public static Node insert(Node root,int val){
-        if(root==null){
+    public static Node insert(Node root, int val) {
+        if (root == null) {
             root = new Node(val);
             return root;
         }
-        if(val<root.data){
-            root.left=insert(root.left,val);
-        }
-        else{
-            root.right=insert(root.right,val);
+        if (val < root.data) {
+            root.left = insert(root.left, val);
+        } else {
+            root.right = insert(root.right, val);
         }
         return root;
     }
-    public static void inorder(Node root){
-        if(root==null){
+
+    public static void inorder(Node root) {
+        if (root == null) {
             return;
         }
         inorder(root.left);
-        System.out.print(root.data+" ");
+        System.out.print(root.data + " ");
         inorder(root.right);
-
     }
 
-    public static boolean search(Node root,int key){
-        if(root==null){
+    public static boolean search(Node root, int key) {
+        if (root == null) {
             return false;
         }
-        if(root.data==key){
+        if (root.data == key) {
             return true;
         }
-        if(key<root.data){
-            return search(root.left,key);
+        if (key < root.data) {
+            return search(root.left, key);
+        } else {
+            return search(root.right, key);
         }
-        else{
-            return search(root.right,key);
-        }    
     }
-    public static Node delete(Node root,int val){
-        if(root.data>val){
-            root.left=delete(root.left,val);
-        }else if(root.data<val){
-           root.right=delete(root.right,val); 
+
+    public static Node delete(Node root, int val) {
+        if (root == null) {
+            return null;
         }
-        else{
-            if(root.left==null && root.right==null){
+        if (root.data > val) {
+            root.left = delete(root.left, val);
+        } else if (root.data < val) {
+            root.right = delete(root.right, val);
+        } else {
+            if (root.left == null && root.right == null) {
                 return null;
             }
-            if(root.left==null){
+            if (root.left == null) {
                 return root.right;
-            }else if(root.right==null){
+            } else if (root.right == null) {
                 return root.left;
             }
 
-            Node IS=inorderSuccessor(root.right);
-            root.data=IS.data;
-            root.right=delete(root.right,IS.data);
+            Node IS = inorderSuccessor(root.right);
+            root.data = IS.data;
+            root.right = delete(root.right, IS.data);
         }
         return root;
     }
-    public static Node inorderSuccessor(Node root){
-        while(root.left!=null){
-            root=root.left;
-        }
-        return root;
 
+    public static Node inorderSuccessor(Node root) {
+        while (root.left != null) {
+            root = root.left;
+        }
+        return root;
     }
-    public static void printinrange(Node root , int x,int y){
-        if(root==null){
+
+    public static void printinrange(Node root, int x, int y) {
+        if (root == null) {
             return;
         }
-        if(root.data>=x && root.data<=y){
-            printinrange(root.left,x,y);
-            System.out.print(root.data+" ");
-            printinrange(root.right,x,y);
-        }else if(root.data>=y){
-            printinrange(root.left,x,y);
-        }else{
-            printinrange(root.right,x,y);
+        if (root.data >= x && root.data <= y) {
+            printinrange(root.left, x, y);
+            System.out.print(root.data + " ");
+            printinrange(root.right, x, y);
+        } else if (root.data >= y) {
+            printinrange(root.left, x, y);
+        } else {
+            printinrange(root.right, x, y);
         }
     }
-    public static void printpath(ArrayList<Integer> path){
-        for(int i=0;i<path.size();i++){
-            System.out.print(path.get(i)+"->");
+
+    public static void printpath(ArrayList<Integer> path) {
+        for (int i = 0; i < path.size(); i++) {
+            System.out.print(path.get(i) + "->");
         }
         System.out.println("null");
     }
 
-    public static void printroot2leaf(Node root, ArrayList<Integer> path){
-        if(root==null){
+    public static void printroot2leaf(Node root, ArrayList<Integer> path) {
+        if (root == null) {
             return;
         }
         path.add(root.data);
-        if(root.left==null && root.right==null){
+        if (root.left == null && root.right == null) {
             printpath(path);
-        }else{
-            printroot2leaf(root.left,path);
-            printroot2leaf(root.right,path);
+        } else {
+            printroot2leaf(root.left, path);
+            printroot2leaf(root.right, path);
         }
-        
-        path.remove(path.size()-1);
-    }
-  public static void main(String[] args){
-    int val[]={5,3,8,1,4,7,9};
-    Node root=null;
-    for(int i=0;i<val.length;i++){
-        root=insert(root,val[i]);
-    }
-    inorder(root);
-    System.out.println();
-
-    if(search(root,7)){
-        System.out.println("Found");
-    }
-    else{
-        System.out.println("Not Found");
+        path.remove(path.size() - 1);
     }
 
-    root=delete(root,3);
-    inorder(root);
-    System.out.println();
-    printinrange(root,4,8);
-    System.out.println();
-    printroot2leaf(root,new ArrayList<>());
+    public static void main(String[] args) {
+        int val[] = {5, 3, 8, 1, 4, 7, 9};
+        Node root = null;
+        for (int i = 0; i < val.length; i++) {
+            root = insert(root, val[i]);
+        }
+        inorder(root);
+        System.out.println();
 
-  }  
+        if (search(root, 7)) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not Found");
+        }
+
+        root = delete(root, 3);
+        inorder(root);
+        System.out.println();
+        printinrange(root, 4, 8);
+        System.out.println();
+        printroot2leaf(root, new ArrayList<>());
+    }
 }

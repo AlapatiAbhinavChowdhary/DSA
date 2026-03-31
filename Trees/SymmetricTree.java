@@ -15,7 +15,7 @@ package Trees;
  *     }
  * }
  */
-class SymmetricTreeSolution {
+class SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
         return is(root.left, root.right);
     }

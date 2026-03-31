@@ -2,18 +2,6 @@ package Trees;
 
 
 import java.util.*;
-/*
- * Left View of Binary Tree
- * GFG: https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
- *
- * Approach: DFS (Preorder traversal)
- * - Visit left child before right child.
- * - The first node encountered at each level is the leftmost node.
- * - Track current level; if arr.size() == level, this is the first node at that level → add it.
- *
- * Time Complexity : O(N)
- * Space Complexity: O(H) — recursion stack, where H is the height of the tree
- */
 
 /*
 class LeftViewBinaryTree {
@@ -27,7 +15,7 @@ class LeftViewBinaryTree {
     }
 }
 */
-class LeftViewBinaryTreeSolution {
+class LeftViewBinaryTree {
     void ans(Node root, int lev, ArrayList<Integer> arr) {
         if (root == null)
             return;

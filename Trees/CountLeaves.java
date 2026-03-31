@@ -6,11 +6,10 @@ class CountLeaves
     int data;
     Node left, right;
 }*/
-class CountLeavesSolution {
+class CountLeaves {
     int countLeaves(Node root) {
-        // Your code
-        if(root==null) return 0;
-        if(root.left==null && root.right==null) return 1;
-        return countLeaves(root.right)+countLeaves(root.left);
+        if (root == null) return 0;
+        if (root.left == null && root.right == null) return 1;
+        return countLeaves(root.right) + countLeaves(root.left);
     }
 }

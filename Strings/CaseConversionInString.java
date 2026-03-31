@@ -1,13 +1,13 @@
 package Strings;
 
 public class CaseConversionInString {
-    public static void main(String[] args){
-        String str="WcEssA";
-        StringBuilder result=new StringBuilder();
-        for(char c:str.toCharArray()){
-            if(Character.isUpperCase(c)){
+    public static void main(String[] args) {
+        String str = "WcEssA";
+        StringBuilder result = new StringBuilder();
+        for (char c : str.toCharArray()) {
+            if (Character.isUpperCase(c)) {
                 result.append(Character.toLowerCase(c));
-            }else{
+            } else {
                 result.append(Character.toUpperCase(c));
             }
         }
@@ -15,21 +15,16 @@ public class CaseConversionInString {
     }
 }
 
-
-
-
-class Main{
-    public static void main(String[] args){
+class CaseConversionManual {
+    public static void main(String[] args) {
         String inp = " WcEssA";
         String result = "";
-        for(char c:inp.toCharArray()){
-            if(c>='A'&&c<='Z'){
-                result += (char)(c+32);
-            }
-            else if(c>='a'&&c<='z'){
-                result += (char)(c-32);
-            }
-            else{
+        for (char c : inp.toCharArray()) {
+            if (c >= 'A' && c <= 'Z') {
+                result += (char) (c + 32);
+            } else if (c >= 'a' && c <= 'z') {
+                result += (char) (c - 32);
+            } else {
                 result += c;
             }
         }

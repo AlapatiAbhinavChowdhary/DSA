@@ -15,14 +15,15 @@ package Trees;
  *     }
  * }
  */
-class InvertTreeSolution {
-    void swap(TreeNode root){
-        TreeNode temp=root.left;
-        root.left=root.right;
-        root.right=temp;
+class InvertTree {
+    void swap(TreeNode root) {
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
     }
+
     public TreeNode invertTree(TreeNode root) {
-        if(root==null) return null;
+        if (root == null) return null;
         swap(root);
         invertTree(root.left);
         invertTree(root.right);

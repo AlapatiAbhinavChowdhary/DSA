@@ -2,6 +2,7 @@ package Trees;
 
 
 import java.util.*;
+
 /**
  * Definition for a binary tree node.
  * public class ZigzagLevelOrder {
@@ -17,28 +18,27 @@ import java.util.*;
  *     }
  * }
  */
-class ZigzagLevelOrderSolution {
+class ZigzagLevelOrder {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        List<List<Integer>> res=new ArrayList<>();
-        if(root==null) return res;
-        Queue<TreeNode> q=new LinkedList<>();
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) return res;
+        Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
-        int lev=0;
-        while(!q.isEmpty()){
-            int size=q.size();
-            List<Integer> temp=new ArrayList<>();
-            for(int i=0;i<size;i++){
-                TreeNode curr=q.poll();
+        int lev = 0;
+        while (!q.isEmpty()) {
+            int size = q.size();
+            List<Integer> temp = new ArrayList<>();
+            for (int i = 0; i < size; i++) {
+                TreeNode curr = q.poll();
                 temp.add(curr.val);
-                if(curr.left!=null) q.add(curr.left);
-                if(curr.right!=null) q.add(curr.right);
+                if (curr.left != null) q.add(curr.left);
+                if (curr.right != null) q.add(curr.right);
             }
-            if(lev%2==1){
+            if (lev % 2 == 1) {
                 Collections.reverse(temp);
             }
             lev++;
             res.add(temp);
-            
         }
         return res;
     }
