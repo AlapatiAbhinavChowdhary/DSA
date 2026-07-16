@@ -1,21 +1,28 @@
-# Ignore compiled Java class files
-*.class
-
-# Ignore Java package output directories
-/bin/
-/out/
-
-# Ignore IDE-specific files
+# IntelliJ IDEA
 .idea/
 *.iml
-*.vscode/
 
-# Ignore OS-specific files
+# Java compiled files
+*.class
+
+# Build directories
+out/
+bin/
+target/
+build/
+
+# Logs
+*.log
+
+# OS files
 .DS_Store
 Thumbs.db
 
-# Ignore log files
-*.log
+# VS Code (if you use it occasionally)
+.vscode/
 
-# Ignore temporary files
-*.tmp
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
