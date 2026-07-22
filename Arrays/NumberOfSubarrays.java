@@ -1,3 +1,4 @@
+package Arrays;
 class Solution {
     public int numberOfSubarrays(int[] nums, int k) {
         return check(nums,k)-check(nums,k-1);

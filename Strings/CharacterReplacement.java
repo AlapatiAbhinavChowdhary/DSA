@@ -1,4 +1,4 @@
-class Solution {
+class Solutio {
     public int characterReplacement(String s, int k) {
         int l=0,r=0,maxl=0,maxf=0;
         int[] hash=new int[26];

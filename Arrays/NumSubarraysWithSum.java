@@ -1,4 +1,4 @@
-class Solution {
+class Sol {
     public static int fun(int[] nums,int goal){
         int l=0,r=0,count=0,sum=0;
         if(goal<0) return 0;
